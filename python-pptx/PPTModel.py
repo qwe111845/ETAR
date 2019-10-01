@@ -94,7 +94,7 @@ class PPTModel:
 
         prs = Presentation(self.ppt_file)
         self.ppt_len = len(prs.slides)
-        print self.ppt_len
+
         for slide in prs.slides:
             text_runs = []
             if slide.has_notes_slide:
